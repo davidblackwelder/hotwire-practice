@@ -1,0 +1,12 @@
+<div class="catch">
+  <%= render partial: "activity/details",
+          locals: { fish_catch: fish_catch } %>
+
+  <% if like = fish_catch.my_like %>
+    <%= render partial: "likes/unlike_button",
+            locals: { fish_catch: fish_catch, like: fish_catch.my_like } %>
+  <% else %>
+    <%= render partial: "likes/like_button",
+            locals: { fish_catch: fish_catch } %>
+  <% end %>
+</div>

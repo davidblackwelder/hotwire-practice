@@ -1,0 +1,5 @@
+<div class="like">
+  <%= button_to fish_catch_likes_path(fish_catch) do %>
+    <%= image_tag("heart-outline.svg") %> <%= fish_catch.likes_count %>
+  <% end %>
+</div>

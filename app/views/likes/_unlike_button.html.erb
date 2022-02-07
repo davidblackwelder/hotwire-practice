@@ -1,0 +1,6 @@
+<div class="unlike">
+  <%= button_to fish_catch_like_path(fish_catch, like),
+        method: :delete do %>
+    <%= image_tag("heart.svg") %> <%= fish_catch.likes_count %>
+  <% end %>
+</div>
